@@ -1,0 +1,4 @@
+[server]
+# 关闭文件监控，消除 site-packages 扫描时的 torchvision 等无害报错
+# 代码修改后需手动刷新或重启
+fileWatcherType = "none"

@@ -1,0 +1,31 @@
+# LLM
+openai>=1.0
+
+# Agent 框架 (Phase 2+)
+langchain>=0.3
+langgraph>=0.2
+langchain-openai>=0.2
+
+# 搜索
+ddgs>=8.0
+
+# 向量 & Embedding (Phase 3)
+chromadb>=0.5
+sentence-transformers>=3.0
+
+# 数据 (Phase 2)
+sqlalchemy>=2.0
+
+# CLI
+click>=8.0
+
+# 配置
+python-dotenv>=1.0
+pydantic>=2.0
+pydantic-settings>=2.0
+
+# 文件格式
+PyYAML>=6.0
+
+# Web (Phase 4)
+streamlit>=1.30

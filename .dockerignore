@@ -1,0 +1,14 @@
+.venv
+.git
+.env
+.env.local
+output
+library
+chroma_db
+*.db
+__pycache__
+*.pyc
+.streamlit
+CLAUDE.md
+tests
+notebooks

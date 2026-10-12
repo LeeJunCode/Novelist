@@ -1,0 +1,13 @@
+services:
+  novelist:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env                    # API Key 等敏感信息
+    volumes:
+      - ./output:/app/output     # 生成的小说持久化
+      - ./library:/app/library   # 本地书库持久化
+      - ./chroma_db:/app/chroma_db  # 向量数据库持久化
+      - ./novelist.db:/app/novelist.db  # SQLite 持久化
+    restart: unless-stopped
